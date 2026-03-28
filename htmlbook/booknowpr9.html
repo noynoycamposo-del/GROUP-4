@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Product</title>
+
+    <style>
+/* BODY */
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+/* NAVBAR */
+nav{
+    background: linear-gradient(343deg,rgba(252, 234, 220, 1) 1%, rgba(252, 230, 215, 1) 36%, rgba(237, 165, 83, 1) 82%);
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    margin:0;
+    font-family:"Boldonse";
+}
+
+/* FIXED HOVER (apply to links, not container) */
+.nav-links a{
+    color:black;
+    margin-left:20px;
+    text-decoration:none;
+    font-family:"Boldonse";
+    padding:8px 12px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    background:rgba(255,255,255,0.6);
+}
+
+/* CONTAINER */
+.container{
+    width:80%;
+    margin:40px auto;
+}
+
+/* ✅ WIDE IMAGE WITH VIEW HEIGHT */
+.product-image{
+    width:100%;
+    height:70vh;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+    /* 🔥 ADD THIS */
+    background:#f5f5f5; /* or any color you like */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.product-image img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+}
+/* DETAILS CARD */
+.details{
+    background:white;
+    margin-top:20px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.details h3{
+    margin-top:0;
+}
+
+.Specs{
+    list-style:none;
+    padding:0;
+}
+
+.Specs li{
+    padding:6px 0;
+    border-bottom:1px solid #eee;
+}
+
+.highlight{
+    color:#3498db;
+    font-weight:bold;
+}
+
+/* BUTTON */
+.btn{
+    margin-top:20px;
+}
+
+.btn button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#3498db;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn button:hover{
+    background:#2980b9;
+}
+
+    </style>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<!-- ✅ WHOLE PAGE ANIMATION -->
+<body class="animate__animated animate__fadeIn animate__faster">
+
+<!-- NAVBAR -->
+<nav class="animate__animated animate__fadeInDown">
+    <h2>Ride_n_Go</h2>
+
+    <div class="nav-links">
+        <a href="../html/sample2..html">Home</a>
+        <a href="../html/signin.html">Logout</a>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container animate__animated animate__fadeInUp animate__delay-1s">
+
+    <!-- PRODUCT IMAGE -->
+    <div class="product-image">
+        <img src="../pictures/pr9.png" alt="Honda Click">
+    </div>
+
+    <!-- PRODUCT DETAILS -->
+    <div class="details">
+        <h3>Honda XRM 125</h3>
+
+        <ul class="Specs">
+            <li class="highlight">125cc Air-Cooled Engine</li>
+            <li>4-Speed Semi-Automatic Transmission</li>
+            <li>9.5 hp / 9.5 Nm torque</li>
+            <li>Front Disc, Rear Drum Brake</li>
+        </ul>
+
+        <div class="btn">
+            <a href="/order/register9.html">
+                <button type="button">Book Now</button>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

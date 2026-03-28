@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <title>Ride_n_Go Admin Panel</title>
+
+            <link rel="stylesheet" href="../css/admin2.css">
+
+                <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap">
+
+        </head>
+
+        <body>
+
+            <div class="admin-layout">
+
+                <!-- SIDEBAR -->
+
+                <aside class="sidebar">
+
+                    <h2 class="logo">Ride_n_Go</h2>
+
+                    <nav>
+
+                        <a href="admin2.html">Dashboard</a>
+                        <a href="#Order-card">Rental Orders</a>
+                        <a href="#Vehicle-section">Vehicles</a>
+                        <a href="#Add-vehicle">Add Vehicle</a>
+                        <a href="sample2..html">View Website</a>
+                        <a href="admin.html">Log-out</a>
+
+                    </nav>
+
+                </aside>
+
+
+                <!-- MAIN CONTENT -->
+
+                <main class="main">
+
+                    <header class="topbar">
+
+                        <h1>Rental Orders</h1>
+
+                    </header>
+
+
+                    <!-- CUSTOMER RENTAL REQUEST -->
+
+                    <div class="order-card" id="Order-card">
+
+                        <h3>Customer Rental Request</h3>
+
+                        <div class="order-info">
+
+                            <div class="customer-details">
+
+                                    <p><strong>Name:</strong> Juan Dela Cruz</p>
+                                    <p><strong>Phone:</strong> 09123456789</p>
+                                    <p><strong>Email:</strong> juan@email.com</p>
+
+                                    <p><strong>Vehicle:</strong> Honda Click</p>
+
+                                    <p><strong>Rental Period:</strong></p>
+                                    <p><strong>Start:</strong> 03/15/2026</p>
+                                    <p><strong>End:</strong> 03/20/2026</p>
+
+                                    <p><strong>Total Days:</strong> 5</p>
+
+                                    <!-- HIDDEN RADIO BUTTONS -->
+                                    <input type="radio" name="action" id="none" checked>
+                                    <input type="radio" name="action" id="approve">
+                                    <input type="radio" name="action" id="decline">
+
+                                <!-- BUTTONS -->
+                                <div class="order-buttons">
+                                    <button onclick="location.href='adminapproved.html'" class="approve-btn">Approved</button>
+                                    <button onclick="location.href='adminreason.html'" class="decline-btn">Declined</button>
+                                </div>
+
+                                
+
+                            </div>
+                            
+
+
+                            <!-- DRIVER LICENSE IMAGE -->
+
+                            <div class="license">
+
+                                <p>Driver License</p>
+
+                                <img src="../pictures/DL.jpg">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- VEHICLE MANAGEMENT -->
+
+                    <section class="vehicle-section" id="Vehicle-section">             
+
+                        <h2>Vehicle Management</h2>
+
+                        <table>
+
+                            <tr>
+                                <th>Vehicle</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+
+                            <tr>
+                                <th  class="theader" colspan="4">MOTORCYCLES</th>
+                            </tr>
+
+
+                            <tr>
+                                <td>Honda Click</td>
+                                <td>Motorcycle</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+
+                            </tr>
+
+
+                            <tr>
+                                <td>Yamaha Mio</td>
+                                <td>Motorcycle</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Honda Beat</td>
+                                <td>Motorcycle</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Honda Adv</td>
+                                <td>Motorcycle</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Suzuki Raider</td>
+                                <td>Motorcycle</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Yamaha Nmax</td>
+                                <td>Motorcycle</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>Suzuki Xrm</td>
+                                <td>Motorcycle</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>Honda Wave</td>
+                                <td>Motorcycle</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                <th  class="theader" colspan="4">VEHICLES</th>
+                            </tr>
+
+                            <tr>
+                                <td>Toyota Vios</td>
+                                <td>Vehicles</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>Mitsubishi Mirage</td>
+                                <td>Vehicles</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>Toyota Fortuner</td>
+                                <td>Vehicles</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>Ford Raptor</td>
+                                <td>Vehicles</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>Suzuki Mini-Van</td>
+                                <td>Vehicles</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>Mitsubishi L300</td>
+                                <td>Vehicles</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>Nissan Navara</td>
+                                <td>Vehicles</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>Isuzu Elf</td>
+                                <td>Vehicles</td>
+
+                                    <td>
+                                        <select>
+                                            <option>Available</option>
+                                            <option selected>Rented</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button onclick="location.href='adminedit.html'"class="edit">Edit</button>
+                                        <button onclick="location.href='admindelete.html'" class="delete">Delete</button>
+                                    </td>
+                            </tr>
+
+                        </table>
+
+                    </section>
+
+
+
+<!-- ADD VEHICLE SECTION -->
+
+                    <section class="add-vehicle" id="Add-vehicle">
+
+                        <h2>Add New Vehicle</h2>
+
+                        <form>
+
+                            <label>Vehicle Name</label>
+                            <input type="text" required>
+
+                            <label>Vehicle Color</label>
+                            <input type="text" required>
+
+                            <label>Vehicle Displacement</label>
+                            <input type="number" required>
+
+                            <label>Vehicle Type</label>
+                            <input type="text" required>
+
+                            <label>Daily Price</label>
+                            <input type="number" required>
+
+                            <label>Upload Vehicle Image</label>
+                            <input type="file" required>
+
+                            <label>Status</label>
+
+                            <select>
+                                <option>Available</option>
+
+                            </select>
+
+                            <button type="submit" >Add Vehicle</button>
+
+                        </form>
+
+                    </section>
+
+                </main>
+
+            </div>
+
+        </body>
+</html>

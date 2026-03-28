@@ -1,0 +1,84 @@
+#bg {
+    background-image: url("../pictures/bg.admin.jpg");
+    background-size: cover;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#login-bar {
+    width: 400px;
+    height: 400px;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    font-family: "Caveat";
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+#login {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    font-family: "Boldonse", system-ui;
+   font-optical-sizing: auto;
+}
+
+input::placeholder{
+    color: black;
+    font-family: "Boldonse", system-ui;
+    
+}
+
+
+#username1, #password1 {
+    font-size: 24px;
+    color: black;
+   
+}
+
+
+#username-input, #password-input {
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+#button-bg {
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Boldonse", system-ui;
+    height: 35px;
+    width: 140px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:#3498db;
+}
+
+#login-button {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    font-family: "Boldonse", system-ui;
+    color: rgb(255, 253, 253);
+    
+}
+
+#button-bg:hover {
+    background-color: #ddd;
+}

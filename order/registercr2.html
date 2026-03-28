@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vehicle Booking System (Prototype)</title>
+<link rel="stylesheet" href="../css/register.css">
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body class="animate__animated animate__fadeIn animate__faster">
+
+<header>
+    <h2>Book  Now</h2>
+
+    <nav class="nav-list">
+            <a href="../html/sample2..html">☰</a>
+    </nav>
+    
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Book Your Vehicle</h3>
+
+        <div class="vehicle-image">
+            <img src="../pictures/cr2.png" alt="Vehicle">
+        </div>
+
+        <form action="../html/waiting.html">
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Phone</label>
+            <input type="tel" placeholder="+639XXXXXXXXX" pattern="^(09|\+639)\d{9}$" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Start Date</label>
+            <input type="date" required>
+            <input type="time" required>
+
+            <label>End Date</label>
+            <input type="date" required>
+            <input type="time" required>
+
+            <label>Upload Driver's License</label>
+            <select name="game" required>
+                <option></option>
+                <option>Philippine Passport</option>
+                <option>Philippine Driver’s License (LTO)</option>
+                <option>Philippine Postal ID</option>
+                <option>Philippine National ID (PhilID / SSS ID / GSIS ID0)</option>
+                <option>Voter’s ID (COMELEC)</option>
+                <option>PRC ID</option>
+                <option>Barangay ID</option>
+            </select>
+            <input type="file" accept="image/*" required>
+
+           
+            <button type="submit">Submit Booking</button>
+
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
+

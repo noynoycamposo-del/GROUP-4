@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* ADD VEHICLE */
+
+.add-vehicle{
+margin-top:40px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.add-vehicle form{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.add-vehicle input,
+.add-vehicle select{
+padding:8px;
+}
+
+.add-vehicle button{
+background:#3498db;
+border:none;
+padding:10px;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+#Add-vehicle{
+    margin: 50px 200px 10px 200px;
+}
+
+h2{
+    text-align: center;
+}
+
+.btn-home button{
+    background-color: green;
+}
+    </style>
+</head>
+
+<body>
+    <section class="add-vehicle" id="Add-vehicle">
+
+                        <h2>Edit Vehicle</h2>
+
+                       <form action="../html/adminedited.html">
+
+                            <label>Vehicle Name</label>
+                            <input type="text" required>
+
+                            <label>Vehicle Color</label>
+                            <input type="text" required>
+
+                            <label>Vehicle Displacement</label>
+                            <input type="number" required>
+
+                            <label>Vehicle Type</label>
+                            <input type="text" required>
+
+                            <label>Daily Price</label>
+                            <input type="number" required>
+
+                            <label>Upload Vehicle Image</label>
+                            <input type="file" required>
+
+                            <label>Status</label>
+
+                            <select>
+                                <option>Available</option>
+
+                            </select>
+
+                            
+
+                            <button type="submit" >Edit Vehicle</button>
+
+                        </form>
+
+                        <br>
+                        <section class="btn-home">
+                            <button onclick="location.href='admin2.html'">Back to Admin</button>
+                        </section>
+
+                    </section>
+</body>
+</html>

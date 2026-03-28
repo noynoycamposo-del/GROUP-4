@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html, body{
+    height:100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+header{
+    background:linear-gradient(343deg,#fceadc,#fce6d7,#eda553);
+    padding:10px 30px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-family:"Boldonse";
+    padding:6px 10px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:white;
+    color:#f35900;
+}
+
+.Logo{
+    font-family:"Boldonse";
+    font-size:24px;
+}
+
+
+
+.container{
+    padding:120px 20px;
+    text-align:center;
+    background-image:url("../pictures/bg.admin.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.container h1{
+    font-size:40px;
+    text-shadow:2px 2px 5px black;
+    font-family: "Boldonse", system-ui; 
+}
+
+
+.section-title{
+    text-align:center;
+    font-family:"Boldonse";
+    margin:40px 0 20px;
+}
+
+.motor-box{
+    width:95%;
+    margin:auto;
+    flex:1; 
+}
+
+
+
+.card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin:20px auto;
+    max-width:1100px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    position:relative;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+
+
+.pic1{
+    width:40%;
+    max-height:250px;
+    object-fit:contain;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.pic1:hover{
+    transform:scale(1.05);
+}
+
+
+
+.text{
+    flex:1;
+}
+
+.text h3{
+    font-family:"Boldonse";
+    margin-bottom:10px;
+}
+
+.Specs,
+.price{
+    list-style:none;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#4b2ca7;
+    font-weight:bold;
+}
+
+
+
+.view{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+
+
+.badge{
+    position:absolute;
+    top:10px;
+    left:10px;
+    padding:4px 8px;
+    border-radius:5px;
+    font-size:12px;
+}
+
+
+
+.available{ background:#2ecc71; }
+.rented{ background:#f4e139; }
+.maintenance{ background:#3498db; }
+.unavailable{ background:#e74c3c; }
+
+
+
+#contacts{
+    text-align:center;
+    padding:60px 20px; 
+    background-color:#111;
+    color:white;
+    font-size:20px;
+    margin-top:50px;
+    font-family: "Boldonse", system-ui; 
+}
+
+
+
+@media (max-width:900px){
+
+    .card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .pic1{
+        width:80%;
+    }
+
+}

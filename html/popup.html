@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Without JS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        /* Button */
+        .btn {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Popup background */
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: none;
+        }
+
+        /* Show popup */
+        .popup:target {
+            display: block;
+        }
+
+        /* Popup box */
+        .box {
+            background: white;
+            width: 300px;
+            margin: 150px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .close {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Popup Example (No JavaScript)</h2>
+
+    <!-- Button -->
+    <a href="#popup" class="btn">Click Me</a>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="box">
+            <p>This is a popup message!</p>
+            <input type="text" placeholder="Username" required>
+            <br>
+            <a href="#" class="close">Close</a>
+        </div>
+    </div>
+
+</body>
+</html>

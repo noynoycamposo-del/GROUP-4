@@ -1,0 +1,288 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial;
+background:#f5f5f5;
+}
+
+.admin-layout{
+display:flex;
+height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:230px;
+background: linear-gradient(343deg,rgba(252, 234, 220, 1) 1%, rgba(252, 230, 215, 1) 36%, rgba(237, 165, 83, 1) 82%);
+color:white;
+padding:20px;
+}
+
+.logo{
+font-family:"Boldonse";
+margin-bottom:30px;
+color:rgb(0, 0, 0);
+}
+
+.sidebar nav{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.sidebar a{
+color:rgb(0, 0, 0);
+text-decoration:none;
+padding:10px;
+border-radius:6px;
+font-family: "Boldonse", system-ui;
+}
+
+.sidebar a:hover{
+background:rgba(255, 255, 255, 0.6);
+}
+
+
+h1{
+    color: #000000;
+    font-family:"Boldonse";
+}
+h3{
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+
+}
+
+
+/* MAIN */
+
+.main{
+flex:1;
+padding:30px;
+overflow:auto;
+scroll-behavior: smooth;
+}
+
+.topbar{
+margin-bottom:20px;
+}
+
+
+/* ORDER CARD */
+
+.order-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+margin-bottom:30px;
+}
+
+.order-info{
+display:flex;
+justify-content:space-between;
+gap:40px;
+}
+
+.customer-details p{
+margin-bottom:8px;
+}
+
+.order-buttons{
+margin-top:15px;
+}
+
+
+.customer-details {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    font-family: Arial;
+}
+
+/* HIDE RADIO */
+input[type="radio"] {
+    display: none;
+}
+
+/* BUTTONS */
+.order-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.approve-btn, .decline-btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.approve-btn {
+    background: green;
+}
+
+.decline-btn {
+    background: red;
+}
+
+/* MESSAGE BOX */
+.message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+}
+
+/* APPROVED STYLE */
+.approve-message {
+    background: #d4edda;
+    color: #155724;
+}
+
+/* DECLINED STYLE */
+.decline-message {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* SHOW MESSAGES */
+#approve:checked ~ .approve-message {
+    display: block;
+}
+
+#decline:checked ~ .decline-message {
+    display: block;
+}
+
+/* INPUT */
+.decline-message input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.approve{
+background:#2ecc71;
+border:none;
+padding:8px 15px;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.decline{
+background:#e74c3c;
+border:none;
+padding:8px 15px;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+
+/* LICENSE IMAGE */
+
+.license img{
+width:220px;
+border-radius:8px;
+border:2px solid #ddd;
+}
+
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+margin-top:20px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+th,td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+th{
+background:#333;
+color:white;
+}
+
+.theader{
+background: linear-gradient(343deg,rgba(252, 234, 220, 1) 1%, rgba(252, 230, 215, 1) 36%, rgba(237, 165, 83, 1) 82%);
+color:black;
+font-family:"Boldonse";
+}
+
+
+#Add-vehicle{
+    padding-top: 100px;
+}
+
+html,body{
+    scroll-behavior: smooth;
+ 
+} 
+
+#Order-card{
+    padding-top: 40px;
+}
+
+html,body{
+    scroll-behavior: smooth;
+   
+} 
+
+#Vehicle-section{
+    padding-top: 40px;
+}
+
+html,body{
+    scroll-behavior: smooth;
+   
+} 
+
+
+/* ADD VEHICLE */
+
+.add-vehicle{
+margin-top:40px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.add-vehicle form{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.add-vehicle input,
+.add-vehicle select{
+padding:8px;
+}
+
+.add-vehicle button{
+background:#3498db;
+border:none;
+padding:10px;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}

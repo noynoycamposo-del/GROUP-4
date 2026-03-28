@@ -1,0 +1,154 @@
+/* BODY */
+body{
+    background-image: url("../pictures/bg.admin.jpg"); /* fix your path */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* CONTAINER */
+.container{
+    width:400px;
+    height:550px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    position:relative;
+    padding:20px;
+}
+
+/* TOGGLE (HIDDEN) */
+#toggle, #popup{
+    display:none;
+}
+
+/* FORMS WRAPPER */
+.form-wrapper{
+    display:flex;
+    width:200%;
+    height:100%;
+    transition:0.5s;
+}
+
+/* SLIDE EFFECT */
+#toggle:checked ~ .container .form-wrapper{
+    transform:translateX(-50%);
+}
+
+/* FORM STYLE */
+.form{
+    width:50%;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+/* NAME FIELDS FLEX */
+.firstname{
+    display:flex;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+/* HEADINGS */
+h2{
+    text-align:center;
+    color: #ffffff;
+    font-family: "Boldonse", system-ui;
+    font-size: 45px
+
+}
+
+/* INPUTS - GLASS EFFECT */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="file"]{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:6px;
+    border:1px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.25); /* semi-transparent */
+    color: #000;
+    backdrop-filter: blur(5px);
+    box-sizing:border-box;
+}
+
+/* BUTTONS */
+button, .submit-btn, .close-btn{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    background: #d6732d;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+    font-family: "Boldonse", system-ui;
+}
+
+button:hover, .submit-btn:hover, .close-btn:hover{
+    background: rgba(41,128,185,0.9);
+}
+
+/* SWITCH LINKS */
+.switch{
+    text-align:center;
+    margin-top:10px;
+    color: #000000;
+}
+
+.switch label{
+    color:#ffffff;
+    cursor:pointer;
+    font-family: "Boldonse", system-ui;
+    font-size: 10px;
+
+}
+
+/* TERMS */
+.terms{
+    font-size:12px;
+    margin-top:10px;
+    text-align:center;
+    color: #000000;
+}
+
+/* POPUP BOX - GLASS EFFECT */
+.popup-content{
+    display:none;
+    background: rgba(255,255,255,0.15); /* semi-transparent */
+    backdrop-filter: blur(10px);
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    width:300px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: #fff;
+    box-shadow:0 8px 32px rgba(0,0,0,0.25);
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* SHOW POPUP WHEN CHECKED */
+#popup:checked ~ .container .popup-content{
+    display:flex;
+}
